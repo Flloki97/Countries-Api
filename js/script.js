@@ -5,8 +5,6 @@ const dropElem = document.querySelector(".drop");
 const region  = document.querySelectorAll(".region");
 
 
-
-
 async function getCountry() {
     const url = await fetch('./data.json');
     const res = await url.json();
@@ -15,7 +13,6 @@ async function getCountry() {
         showCountry(element);
     });
     
-
 }
 
 getCountry();
