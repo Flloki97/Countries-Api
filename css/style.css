@@ -19,6 +19,7 @@ body {
     --bgColor: hsl(200, 15%, 8%);
     background-color: var(--bgColor);
     color: var(--fontcolor);
+    --countrybgColor: hsl(207, 36%, 17%);
 }
 
 .container {
@@ -123,6 +124,7 @@ i {
     width: 300px;
     border-radius: 5px;
     overflow: hidden;
+    background: var(--countrybgColor);
 }
 
 .country-img {
