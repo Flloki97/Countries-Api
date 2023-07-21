@@ -54,8 +54,9 @@ region.forEach(element => {
 });
 
 search.addEventListener("input", () => {
+    console.log(search.value.toLowerCase());
     Array.from(countryName).forEach(elem => {
-        if(elem.innerText.includes(search.value) || element.innerText == "All") {
+        if(elem.innerText.toLowerCase().includes(search.value.toLowerCase())) {
             elem.parentElement.parentElement.style.display="grid";
         } else {
             elem.parentElement.parentElement.style.display="none";
