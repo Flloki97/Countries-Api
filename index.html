@@ -36,43 +36,45 @@
             </div>
         </div>
     </nav>
-    <section>
+    <main>
         <div class="countries">
         </div>
-    </section>
-    <div class="countryModal show">
-        <button class="back">
-            <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
-            Back
-        </button>
-        <div class="modal">
-            <div class="leftModal">
-                <img src="https://flagcdn.com/al.svg" alt="flag" srcset="">
-            </div>
-            <div class="rightModal">
-                <h1>Albania</h1>
-                <div class="innerRight-container">
-                    <div class="innerLeft inner">
-                        <p><strong>Native Name:</strong>${data.population}</p>
-                        <p><strong>Population:</strong>${data.region}</p>
-                        <p><strong>Region:</strong>${data.capital}</p>
-                        <p><strong>Sub Region:</strong>${data.capital}</p>
-                        <p><strong>Capital:</strong>${data.population}</p>
-                    </div>
-                    <div class="innerRight inner">
-                        <p><strong>Top Level Domain:</strong>${data.region}</p>
-                        <p><strong>Currencies:</strong>${data.capital}</p>
-                        <p><strong>Capital:</strong>${data.capital}</p>
-                        <p><strong>Languages:</strong>${data.languages[0].name}</p>
-                    </div>
+    </main>
+    <section>
+        <div class="countryModal show">
+            <button class="back">
+                <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+                Back
+            </button>
+            <div class="modal">
+                <div class="leftModal">
+                    <img src="https://flagcdn.com/al.svg" alt="flag" srcset="">
                 </div>
-                <div class="border-countries-container">
-                    <p><strong>Border Countries:</strong>${data.region}</p>
+                <div class="rightModal">
+                    <h1>Albania</h1>
+                    <div class="innerRight-container">
+                        <div class="innerLeft inner">
+                            <p><strong>Native Name:</strong>${data.population}</p>
+                            <p><strong>Population:</strong>${data.region}</p>
+                            <p><strong>Region:</strong>${data.capital}</p>
+                            <p><strong>Sub Region:</strong>${data.capital}</p>
+                            <p><strong>Capital:</strong>${data.population}</p>
+                        </div>
+                        <div class="innerRight inner">
+                            <p><strong>Top Level Domain:</strong>${data.region}</p>
+                            <p><strong>Currencies:</strong>${data.capital}</p>
+                            <p><strong>Capital:</strong>${data.capital}</p>
+                            <p><strong>Languages:</strong>${data.languages[0].name}</p>
+                        </div>
+                    </div>
+                    <div class="border-countries-container">
+                        <p><strong>Border Countries:</strong>${data.region}</p>
+                    </div>
                 </div>
             </div>
         </div>
-
-    </div>
+    </section>
+    
 
 
 
