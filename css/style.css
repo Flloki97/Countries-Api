@@ -269,7 +269,7 @@ i.fa.fa-long-arrow-left {
     cursor: pointer;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 867px) {
     .top-container h1 {
         font-size: 18px;
     }
