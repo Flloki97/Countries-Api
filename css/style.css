@@ -16,10 +16,10 @@ body {
 
 .dark {
     --fontcolor: hsl(0, 0%, 98%);
-    --bgColor: hsl(200, 15%, 8%);
+    --bgColor: hsl(207, 26%, 17%);
     background-color: var(--bgColor);
     color: var(--fontcolor);
-    --countrybgColor: hsl(207, 36%, 17%);
+    --countrybgColor: hsl(209, 23%, 22%);
 }
 
 .container {
@@ -31,17 +31,20 @@ body {
 
 .container:nth-child(1) {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    background: var(--countrybgColor);
 }
 
 button {
     outline: none;
     border: 0;
     background-color: transparent;
+    color: var(--fontcolor);
 }
 
 .toggle {
     font-size: 18px;
     cursor: pointer;
+    color: var(--fontcolor);
 }
 
 .toggle i {
@@ -64,6 +67,8 @@ button {
     border: 0;
     font-size: 16px;
     letter-spacing: 0.5px;
+    background: transparent;
+    color: var(--fontcolor);
 }
 
 .form-control i {
@@ -80,6 +85,8 @@ i {
 .dropDownCon {
     width: 200px;
     position: relative;
+    background: var(--countrybgColor);
+    border-radius: 5px;
 }
 
 .dropDown {
@@ -104,8 +111,8 @@ i {
     padding: 10px 14px;
     width: 100%;
     border-radius: 5px;
-    background: var(--bgColor);
     cursor: pointer;
+    background: var(--bgColor);
 }
 
 .drop p {
@@ -122,10 +129,10 @@ i {
 .country {
     min-height: 350px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    width: 300px;
     border-radius: 5px;
     overflow: hidden;
     background: var(--countrybgColor);
+    cursor: pointer;
 }
 
 .country-img {
@@ -135,7 +142,7 @@ i {
 .country-img img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .country-info {
@@ -160,7 +167,161 @@ i {
     display: none;
 }
 
+.countryModal {
+    position: fixed;
+    width: 100%;
+    height: calc(100% - 96px);
+    top: 96px;
+    left: 0;
+    background: var(--bgColor);
+    padding: 100px;
+}
 
+.modal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    gap: 100px;
+}
+
+.leftModal img {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.leftModal,
+.rightModal {
+    width: 100%;
+}
+
+.leftModal img {
+    width: 100%;
+}
+
+.rightModal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 60%;
+}
+
+.rightModal h1 {
+    font-size: 40px;
+}
+
+.countryModal button {
+    background: var(--bgColor);
+    padding: 10px 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+i.fa.fa-long-arrow-left {
+    padding-right: 4px;
+}
+
+.innerRight-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.innerLeft p,
+.innerRight p {
+    padding-bottom: 15px;
+}
+
+/* .inner p {
+    letter-spacing: 1px;
+} */
+
+.inner p>strong {
+    font-weight: 600;
+}
+
+.show {
+    display: none;
+}
+
+.border-countries-container {
+    width: 100%;
+}
+
+.border-countries-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.top-container {
+    position: fixed;
+    top: 0;
+    background: var(--bgColor) !important;
+    z-index: 9;
+}
+
+.bottom-container {
+    margin-top: 100px;
+}
+
+.back {
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .top-container h1 {
+        font-size: 18px;
+    }
+
+    .toggle {
+        font-size: 16px;
+    }
+
+    .bottom-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+
+    .dropDownCon {
+        width: 60%;
+        margin-top: 30px;
+    }
+
+    .countryModal {
+        padding: 10px 15px;
+        height: calc(100% - 80px);
+        top: 80px;
+        overflow: scroll;
+    }
+
+    .back {
+        margin-bottom: 30px;
+    }
+
+    .modal {
+        height: auto;
+        gap: 0;
+    }
+
+    .leftModal {
+        margin-bottom: 40px;
+    }
+
+    .modal,
+    .innerRight-container {
+        flex-direction: column;
+    }
+
+    .rightModal h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+}
 
 
 

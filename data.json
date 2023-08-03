@@ -145,7 +145,7 @@
     "area": 28748,
     "gini": 33.2,
     "timezones": ["UTC+01:00"],
-    "borders": ["MNE", "GRC", "MKD", "UNK"],
+    "borders": ["MNE", "GRC", "MKD", "KOS"],
     "nativeName": "Shqipëria",
     "numericCode": "008",
     "flags": {
