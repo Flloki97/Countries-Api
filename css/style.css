@@ -54,6 +54,7 @@ button {
     position: relative;
     border-radius: 5px;
     overflow: hidden;
+    background: var(--countrybgColor);
 }
 
 .form-control input {
